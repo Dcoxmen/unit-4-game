@@ -7,6 +7,10 @@ header {
   text-align: center;
   padding: 20px;
 }
+.arena-div {
+  background-color: #c82f4c;
+  color: #ffffff;
+}
 .theMat {
   text-align: center;
   border: 5px solid #c82f4c;
