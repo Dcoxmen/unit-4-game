@@ -9,7 +9,8 @@ header {
 }
 .theMat {
   text-align: center;
-  background-color: aquamarine;
+  border: 5px solid #c82f4c;
+  border-radius: 20px;
   width: 80%;
   margin-left: 10%;
 }
