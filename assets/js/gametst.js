@@ -220,7 +220,7 @@ $(document).ready(function() {
           renderMessage("clearMessage");
           restartGame("You Won!!!! GAME OVER!!!");
           $("#attack-button").unbind("click");
-          // The following line will play the imperial march:
+          // The following line will play the victory song:
           setTimeout(function() {
             audio.play();
           }, 2000);
