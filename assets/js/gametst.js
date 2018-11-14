@@ -7,7 +7,7 @@ $(document).ready(function() {
   let punchhit = new Audio("assets/audio/kickcontact1.mp3");
   let fightme = new Audio("assets/audio/fightwithme.mp3");
 
-  //Array of Playable Characters
+  //Array of  Characters and Stats
   let characters = {
     kim: {
       name: "kim",
@@ -112,7 +112,7 @@ $(document).ready(function() {
       $(document).on("click", ".enemy", function() {
         //select an combatant to fight
         name = $(this).data("name");
-        //if defernder area is empty
+        //if defender area is empty
         if ($("#defender").children().length === 0) {
           renderCharacters(name, "#defender");
           $(this).hide();
