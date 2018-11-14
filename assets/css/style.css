@@ -1,0 +1,58 @@
+header {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+.theMat {
+  text-align: center;
+  background-color: aquamarine;
+  width: 80%;
+  margin-left: 10%;
+}
+/*---------------------*/
+/* Character rendering */
+/*---------------------*/
+.character {
+  width: 115px;
+  margin: 0px 30px 0px 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+.character img {
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 115px;
+}
+.character-name {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-family: "Itim", cursive;
+  font-size: 20px;
+}
+.character-health {
+  text-align: center;
+}
+
+.game-row {
+  margin-left: 2%;
+}
+.atkbtn-div {
+  text-align: right;
+}
+.select-con {
+  width: 80%;
+  margin-left: 10%;
+}
+#defender {
+  text-align: center;
+}
+#selected-character {
+  text-align: center;
+}
+
+#characters-section {
+  text-align: center;
+}
