@@ -12,14 +12,14 @@ $(document).ready(function() {
     kim: {
       name: "kim",
       health: 120,
-      attack: 8,
+      attack: 9,
       imageUrl: "assets/images/kim.png",
-      enemyAttackBack: 15
+      enemyAttackBack: 12
     },
     bob: {
       name: "bob",
       health: 100,
-      attack: 14,
+      attack: 8,
       imageUrl: "assets/images/bob.png",
       enemyAttackBack: 10
     },
@@ -28,14 +28,14 @@ $(document).ready(function() {
       health: 150,
       attack: 8,
       imageUrl: "assets/images/lee.png",
-      enemyAttackBack: 20
+      enemyAttackBack: 14
     },
     anton: {
       name: "anton",
       health: 140,
       attack: 7,
       imageUrl: "assets/images/anton.png",
-      enemyAttackBack: 20
+      enemyAttackBack: 13
     }
   };
 
