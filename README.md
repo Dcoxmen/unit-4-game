@@ -32,13 +32,15 @@ In this assignment, you'll create another fun and interactive game for web brows
 
 ### Option Two: Star Wars RPG Game (Challenge)
 
+I have taken the concepts below and applied them to the martial arts dojo game created. Started out with the star wars theme but wanted to a make it a little more original. I used old kung fu movie clip sound bytes in the interactivity.
+
 ![Star Wars](Images/2-StarWars.jpg)
 
 1. [Watch the demo](https://youtu.be/klN2-ITjRt8).
 
 2. Here's how the app works:
 
-   - When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game.
+   - When the game starts, the player will choose a character by clicking on the picture. The player will fight as that character for the rest of the game.
 
    - The player must then defeat all of the remaining fighters. Enemies should be moved to a different area of the screen.
 
@@ -78,18 +80,10 @@ In this assignment, you'll create another fun and interactive game for web brows
 
 - Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
 
----
-
 ### Create a README.md
 
 Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
 
-- [About READMEs](https://help.github.com/articles/about-readmes/)
-
-- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
----
-
 ### Add To Your Portfolio
 
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
+After completing the work please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
