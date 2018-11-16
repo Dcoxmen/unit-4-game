@@ -18,21 +18,21 @@ $(document).ready(function() {
     },
     bob: {
       name: "bob",
-      health: 100,
+      health: 110,
       attack: 8,
       imageUrl: "assets/images/bob.png",
       enemyAttackBack: 10
     },
     lee: {
       name: "lee",
-      health: 150,
+      health: 130,
       attack: 8,
       imageUrl: "assets/images/lee.png",
       enemyAttackBack: 14
     },
     anton: {
       name: "anton",
-      health: 140,
+      health: 132,
       attack: 7,
       imageUrl: "assets/images/anton.png",
       enemyAttackBack: 13
@@ -148,7 +148,7 @@ $(document).ready(function() {
     if (areaRender == "enemyDefeated") {
       $("#defender").empty();
       var gameStateMessage =
-        "You have defated " +
+        "You have defeated " +
         charObj.name +
         ", you can choose to fight another enemy.";
       renderMessage(gameStateMessage);
