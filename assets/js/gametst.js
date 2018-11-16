@@ -11,31 +11,31 @@ $(document).ready(function() {
   let characters = {
     kim: {
       name: "kim",
-      health: 120,
-      attack: 9,
+      health: 100,
+      attack: 13,
       imageUrl: "assets/images/kim.png",
-      enemyAttackBack: 12
+      enemyAttackBack: 15
     },
     bob: {
       name: "bob",
       health: 110,
-      attack: 8,
+      attack: 10,
       imageUrl: "assets/images/bob.png",
-      enemyAttackBack: 10
+      enemyAttackBack: 7
     },
     lee: {
       name: "lee",
       health: 130,
       attack: 8,
       imageUrl: "assets/images/lee.png",
-      enemyAttackBack: 14
+      enemyAttackBack: 18
     },
     anton: {
       name: "anton",
       health: 132,
       attack: 7,
       imageUrl: "assets/images/anton.png",
-      enemyAttackBack: 13
+      enemyAttackBack: 20
     }
   };
 
