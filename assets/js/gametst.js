@@ -48,7 +48,7 @@ $(document).ready(function() {
   var killCount = 0;
 
   var renderOne = function(character, renderArea, makeChar) {
-    //character: obj, renderArea: class/id, makeChar: string
+    //character render
     var charDiv = $(
       "<div class='character' data-name='" + character.name + "'>"
     );
@@ -57,6 +57,8 @@ $(document).ready(function() {
       "src",
       character.imageUrl
     );
+
+    //character health render
     var charHealth = $("<div class='character-health'>").text(character.health);
 
     charDiv
@@ -64,8 +66,6 @@ $(document).ready(function() {
       .append(charImage)
       .append(charHealth);
     $(renderArea).append(charDiv);
-    //Capitalizes the first letter in characters name
-    // $('.character').css('textTransform', 'capitalize');
     // conditional render
     if (makeChar == "enemy") {
       $(charDiv).addClass("enemy");
@@ -75,7 +75,7 @@ $(document).ready(function() {
     }
   };
 
-  // Create function to render game message to DOM
+  //a Function to game message render
   var renderMessage = function(message) {
     var gameMesageSet = $("#gameMessage");
     var newMessage = $("<div>").text(message);
@@ -87,7 +87,7 @@ $(document).ready(function() {
   };
 
   var renderCharacters = function(charObj, areaRender) {
-    //render all characters
+    //Make all characters
     if (areaRender == "#characters-section") {
       $(areaRender).empty();
       for (var key in charObj) {
@@ -102,15 +102,15 @@ $(document).ready(function() {
       renderOne(charObj, areaRender, "");
       $("#attack-button").css("visibility", "visible");
     }
-    //render combatants
+    //Make fighters
     if (areaRender == "#available-to-attack-section") {
       $("#available-to-attack-section").prepend("Choose Opponent");
       for (var i = 0; i < charObj.length; i++) {
         renderOne(charObj[i], areaRender, "enemy");
       }
-      //render one enemy to defender area
+      //render the defender to the Arena
       $(document).on("click", ".enemy", function() {
-        //select an combatant to fight
+        //select an enemy to fight
         name = $(this).data("name");
         //if defender area is empty
         if ($("#defender").children().length === 0) {
