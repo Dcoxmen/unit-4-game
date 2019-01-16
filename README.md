@@ -1,36 +1,20 @@
 # unit-4-game
 
-# jQuery Assignment
+Made a variation of the Star Wars RPG Game (Challenge) but with a different theme.
+This is a kung fu dojo arena game. Meets all assignment criteria and bonus features. Used sound clips from old kung fu movies for audio effects.
+JQuery Library Javascript.
+
+# jQuery Assignment Criteria
 
 ### Overview
 
 In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
 
-### Submission on BCS
-
-- Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
-
-### Before You Begin
-
-1. Create a new GitHub repo called `unit-4-game`, then clone it to your computer.
-
-2. Inside the `unit-4-game` folder, create an `index.html` file.
-
-3. Still inside the `unit-4-game` directory, make a folder called `assets`.
-
-   - Inside the `assets` directory, make three additional folders: `javascript`, `css` and `images`.
-     - In the `javascript` folder, make a file called `game.js`.
-     - In the `css` folder, make a file called `style.css`.
-     - In the `css` folder, make a file called `reset.css`. Paste into it the code found from the Meyerweb Reset.
-     - In the images folder, save any of the images you plan on using.
-
-4. Set up your repository to deploy to Github Pages.
-
-5. Push the above changes to GitHub.
-
-6. Choose whichever game you want to make from the choices below. The CrystalsCollector game is the recommended option, but if you are looking for an extra hard challenge then take a stab at the Star Wars exercise. (Note: Only choose the Star Wars Exercise if you are feeling very comfortable with the material covered in class. The Crystal Collector activity is plenty challenging enough!).
+Choose whichever game you want to make from the choices below. The CrystalsCollector game is the recommended option, but if you are looking for an extra hard challenge then take a stab at the Star Wars exercise. (Note: Only choose the Star Wars Exercise if you are feeling very comfortable with the material covered in class. The Crystal Collector activity is plenty challenging enough!).
 
 ### Option Two: Star Wars RPG Game (Challenge)
+
+Made a variation of this assignment turning the logic into a kung fu tournement game.
 
 I have taken the concepts below and applied them to the martial arts dojo game created. Started out with the star wars theme but wanted to a make it a little more original. I used old kung fu movie clip sound bytes in the interactivity.
 
@@ -75,15 +59,3 @@ I have taken the concepts below and applied them to the martial arts dojo game c
   - A winning player must pick their characters wisely by first fighting an enemy with low `Counter Attack Power`. This will allow them to grind `Attack Power` and to take on enemies before they lose all of their `Health Points`. Healing options would mess with this dynamic.
 
 - Your players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player.
-
-### Reminder: Submission on BCS
-
-- Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
-
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-### Add To Your Portfolio
-
-After completing the work please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
