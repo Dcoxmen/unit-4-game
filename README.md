@@ -1,4 +1,4 @@
-# unit-4-game
+# RPG-JS-Martial-Arts-game
 
 Made a variation of the Star Wars RPG Game (Challenge) but with a different theme.
 This is a kung fu dojo arena game. Meets all assignment criteria and bonus features. Used sound clips from old kung fu movies for audio effects.
