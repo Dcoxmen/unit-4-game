@@ -1,4 +1,4 @@
-//Global variables
+//Global letiables
 $(document).ready(function() {
   //audio clips
   let audio = new Audio("assets/audio/MAsoundtrack.mp3");
@@ -11,7 +11,7 @@ $(document).ready(function() {
   let characters = {
     kim: {
       name: "kim",
-      health: 100,
+      health: 120,
       attack: 13,
       imageUrl: "assets/images/kim.png",
       enemyAttackBack: 15
@@ -32,34 +32,32 @@ $(document).ready(function() {
     },
     anton: {
       name: "anton",
-      health: 132,
+      health: 128,
       attack: 7,
       imageUrl: "assets/images/anton.png",
       enemyAttackBack: 20
     }
   };
 
-  var currSelectedCharacter;
-  var currDefender;
-  var combatants = [];
-  var indexofSelChar;
-  var attackResult;
-  var turnCounter = 1;
-  var killCount = 0;
+  let currSelectedCharacter;
+  let currDefender;
+  let combatants = [];
+  let turnCounter = 1;
+  let killCount = 0;
 
-  var renderOne = function(character, renderArea, makeChar) {
+  let renderOne = function(character, renderArea, makeChar) {
     //character render
-    var charDiv = $(
+    let charDiv = $(
       "<div class='character' data-name='" + character.name + "'>"
     );
-    var charName = $("<div class='character-name'>").text(character.name);
-    var charImage = $("<img alt='image' class='character-image'>").attr(
+    let charName = $("<div class='character-name'>").text(character.name);
+    let charImage = $("<img alt='image' class='character-image'>").attr(
       "src",
       character.imageUrl
     );
 
     //character health render
-    var charHealth = $("<div class='character-health'>").text(character.health);
+    let charHealth = $("<div class='character-health'>").text(character.health);
 
     charDiv
       .append(charName)
@@ -76,9 +74,9 @@ $(document).ready(function() {
   };
 
   //a Function to game message render
-  var renderMessage = function(message) {
-    var gameMesageSet = $("#gameMessage");
-    var newMessage = $("<div>").text(message);
+  let renderMessage = function(message) {
+    let gameMesageSet = $("#gameMessage");
+    let newMessage = $("<div>").text(message);
     gameMesageSet.append(newMessage);
 
     if (message == "clearMessage") {
@@ -86,11 +84,11 @@ $(document).ready(function() {
     }
   };
 
-  var renderCharacters = function(charObj, areaRender) {
+  let renderCharacters = function(charObj, areaRender) {
     //Make all characters
     if (areaRender == "#characters-section") {
       $(areaRender).empty();
-      for (var key in charObj) {
+      for (let key in charObj) {
         if (charObj.hasOwnProperty(key)) {
           renderOne(charObj[key], areaRender, "");
         }
@@ -105,7 +103,7 @@ $(document).ready(function() {
     //Make fighters
     if (areaRender == "#available-to-attack-section") {
       $("#available-to-attack-section").prepend("Choose Opponent");
-      for (var i = 0; i < charObj.length; i++) {
+      for (let i = 0; i < charObj.length; i++) {
         renderOne(charObj[i], areaRender, "enemy");
       }
       //render the defender to the Arena
@@ -123,7 +121,7 @@ $(document).ready(function() {
     //render defender
     if (areaRender == "#defender") {
       $(areaRender).empty();
-      for (var i = 0; i < combatants.length; i++) {
+      for (let i = 0; i < combatants.length; i++) {
         //add enemy to defender area
         if (combatants[i].name == charObj) {
           $("#defender").append("<div>Your opponent</div>");
@@ -138,7 +136,7 @@ $(document).ready(function() {
       renderOne(charObj, "#defender", "defender");
       punchhit.play();
     }
-    //re-render player character when attacked
+    //re-render enemy character when attacked
     if (areaRender == "enemyDamage") {
       $("#selected-character").empty();
       $("#selected-character").prepend("<div>Your Character</div>");
@@ -147,7 +145,7 @@ $(document).ready(function() {
     //render defeated enemy
     if (areaRender == "enemyDefeated") {
       $("#defender").empty();
-      var gameStateMessage =
+      let gameStateMessage =
         "You have defeated " +
         charObj.name +
         ", you can choose to fight another enemy.";
@@ -155,14 +153,14 @@ $(document).ready(function() {
       victoryyell.play();
     }
   };
-  //this is to render all characters for user to choose their computer
+  //this is to render all characters for user to choose their players
   renderCharacters(characters, "#characters-section");
   $(document).on("click", ".character", function() {
     name = $(this).data("name");
     //if no player char has been selected
     if (!currSelectedCharacter) {
       currSelectedCharacter = characters[name];
-      for (var key in characters) {
+      for (let key in characters) {
         if (key != name) {
           combatants.push(characters[key]);
         }
@@ -180,7 +178,7 @@ $(document).ready(function() {
     //if defernder area has enemy
     if ($("#defender").children().length !== 0) {
       //defender state change
-      var attackMessage =
+      let attackMessage =
         "You attacked " +
         currDefender.name +
         " for " +
@@ -196,7 +194,7 @@ $(document).ready(function() {
         //enemy not dead keep playing
         renderCharacters(currDefender, "playerDamage");
         //player state change
-        var counterAttackMessage =
+        let counterAttackMessage =
           currDefender.name +
           " attacked you back for " +
           currDefender.enemyAttackBack +
@@ -234,13 +232,13 @@ $(document).ready(function() {
     }
   });
 
-  //Restarts the game - renders a reset button
-  var restartGame = function(inputEndGame) {
+  //Restarts the game - renders a reset button test
+  let restartGame = function(inputEndGame) {
     //When 'Restart' button is clicked, reload the page.
-    var restart = $('<button class="btn">Restart</button>').click(function() {
+    let restart = $('<button class="btn">Restart</button>').click(function() {
       location.reload();
     });
-    var gameState = $("<div>").text(inputEndGame);
+    let gameState = $("<div>").text(inputEndGame);
     $("#gameMessage").append(gameState);
     $("#gameMessage").append(restart);
   };
